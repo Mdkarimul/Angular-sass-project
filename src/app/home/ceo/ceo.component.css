@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poppins:wght@300;300&family=Roboto:wght@400&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+  padding: 25px 0px;
+}
+
+.message-title-box {
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.ceo_cont_image {
+  width: 100%;
+  height: auto;
+  padding: 0px 0px;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ceo_cont_image img {
+  border-radius: 5px;
+}
+
+.ceo-details {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.social-cont {
+  width: 50%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social-cont fa-icon {
+  font-size: 18px;
+  color: none;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.name {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  margin-top: 25px;
+}
+
+.description {
+  padding: 20px;
+  line-height: 28px;
+  font-family: "Popins", sans-serif;
+  text-align: justify;
+  color: #5a5a5a;
+}
+
+.contact {
+  padding: 15px;
+  border: none;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif !important;
+  color: #fff;
+  background-color: teal;
+  font-weight: bold;
+  border-radius: 9px;
+  display: none;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .ceo_cont_image {
+    border-radius: 0px;
+  }
+  .ceo_cont_image img {
+    border-radius: 0%;
+  }
+  .message-title-box {
+    width: 100%;
+    height: auto;
+    padding: 60px 0px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .hide_in_mobile {
+    display: none;
+  }
+  .contact {
+    display: block;
+    padding: 10px;
+  }
+  .title {
+    margin: 15px 0px !important;
+  }
+}

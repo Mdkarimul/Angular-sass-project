@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  margin: 5em 0px;
+}
+
+.title {
+  color: #5a5a5a;
+  font-size: 30px;
+  text-align: center;
+  margin: 40px 2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.content-cont {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cont-one, .cont-two, .cont-three {
+  width: 28%;
+  height: auto;
+  box-shadow: 1px 1px 3px 0px #ccc;
+}
+
+.headline {
+  width: 100%;
+  float: left;
+  height: 15%;
+  background-color: #45D387;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.headline h2 {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-family: "Popins" sans-serif;
+}
+
+.headline h3 {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  font-family: "Roboto" sans-serif;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  padding: 8rem 16px;
+}
+
+.content p {
+  padding: 8px 0px;
+  cursor: pointer;
+  color: #5a5a5a;
+  font-size: 15px;
+  width: 100%;
+  font-weight: 400;
+  font-family: "Popins" sans-serif;
+}
+
+.content span::after {
+  display: inline-block;
+  content: " ";
+  width: 0px;
+  height: 15px;
+  background-color: #45D387;
+  text-align: center;
+  padding: 0px 0px;
+  transition: all 0.5s;
+}
+
+.content p:hover span::after {
+  display: inline-block;
+  content: " ";
+  width: 8px;
+  height: 15px;
+  background-color: #45D387;
+  text-align: center;
+  padding: 0px 0px;
+}
+
+@media (min-width: 1000px) and (max-width: 1180px) {
+  .content {
+    padding: 6rem 10px;
+  }
+  .cont-one, .cont-two, .cont-three {
+    width: 33%;
+  }
+}
+@media (min-width: 734px) and (max-width: 1000px) {
+  .title {
+    font-size: 20px;
+    margin: 25px 1px;
+  }
+  .cont-one, .cont-two, .cont-three {
+    width: 46%;
+  }
+  .cont-three {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 200px) and (max-width: 734px) {
+  .title {
+    font-size: 20px;
+    margin: 25px 2px;
+  }
+  .headline {
+    height: 15%;
+  }
+  .content {
+    padding: 7rem 16px;
+  }
+  .cont-one, .cont-two, .cont-three {
+    width: 100%;
+  }
+  .cont-two, .cont-three {
+    margin-top: 30px;
+  }
+}

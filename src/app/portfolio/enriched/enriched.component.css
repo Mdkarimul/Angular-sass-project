@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poppins:wght@300;400&family=Roboto:wght@400&display=swap");
+.main {
+  padding: 20px 5px;
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #5a5a5a;
+  margin: 40px auto;
+}
+
+.title-project {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #5a5a5a;
+}
+
+.animate-cont {
+  width: 85%;
+  height: auto;
+  display: flex;
+  margin: 10px auto 100px auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+
+.project-cont {
+  width: 85%;
+  height: auto;
+  display: flex;
+  margin: 10px auto 10px auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+
+.animate-cont > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  border: 1px solid #ccc;
+  width: 32%;
+  height: 85px;
+  display: flex;
+  padding: 0px 5mm;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  margin-top: 10px;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.project-item {
+  width: 31%;
+  height: 330px;
+  background-color: transparent;
+  margin: 20px 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.hover-cont {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  bottom: -25px;
+  background-color: rgba(50, 196, 130, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s linear;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.hover-cont fa-icon {
+  color: white;
+  font-size: 60px;
+  cursor: pointer;
+  display: none;
+  transition: all 0.5s linear;
+}
+
+.project-item:hover .hover-cont {
+  background-color: rgba(50, 196, 130, 0.738);
+  bottom: -10px;
+}
+
+.project-item:hover .hover-cont fa-icon {
+  display: block;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.service_img {
+  width: 40px;
+  height: 40px;
+  margin: 0px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service_img img {
+  width: 30px;
+}
+
+.service_cont {
+  color: #5a5a5a;
+  font-weight: 600;
+  margin: 0px 5px;
+  font-size: 16px;
+  transform: translate(0px);
+  transition: all 0.3s linear;
+}
+
+.active {
+  background-image: linear-gradient(to bottom right, #1E9AFE, #51CFD8);
+  border: none;
+}
+
+.remove {
+  display: none;
+}
+
+.twinc {
+  color: white;
+  transform: translate(-5px);
+}
+
+@media (max-width: 1200px) and (min-width: 920px) {
+  .animate-cont {
+    width: 94%;
+  }
+  .project-cont {
+    width: 95%;
+  }
+  .project-item {
+    width: 33%;
+  }
+  .hover-cont {
+    width: 80%;
+    height: 95%;
+  }
+  .project-img {
+    width: 90%;
+    height: 95%;
+    bottom: 0px;
+    position: absolute;
+  }
+}
+@media (max-width: 920px) and (min-width: 650px) {
+  .animate-cont {
+    width: 95%;
+  }
+  .service-item {
+    width: 49%;
+    margin-top: 15px;
+    height: 80px;
+  }
+  .project-cont {
+    width: 90%;
+  }
+  .project-item {
+    width: 49%;
+  }
+  .hover-cont {
+    width: 90%;
+  }
+  .project-img {
+    width: 95%;
+    bottom: 0px;
+    position: absolute;
+  }
+  .title-project {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 650px) and (min-width: 0px) {
+  .animate-cont {
+    width: 95%;
+  }
+  .service-item {
+    width: 90%;
+    margin: 15px auto;
+    height: 75px;
+  }
+  .project-cont {
+    width: 95%;
+  }
+  .project-item {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .project-img {
+    width: 95%;
+    height: 100%;
+    bottom: 0px;
+    position: absolute;
+  }
+  .hover-cont {
+    width: 80%;
+  }
+  .title-project {
+    font-size: 2rem;
+  }
+}

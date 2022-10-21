@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+*{
+    box-shadow: none!important;
+    padding: 0px;
+    margin: 0px;
+}
+
+.message{
+    width:100%;
+    height:auto;
+    background-color: #f5f5f5;
+    padding:20mm 0px; 
+}
+.message-number
+{
+    font-family: 'Kanit', sans-serif;
+    font-weight:bold;
+    color:teal;
+    font-size: 16mm;
+    margin:2px 0px;
+}
+.message-number:hover
+{
+    color:rgb(14, 131, 139)
+}
+.title
+{
+    font-family: 'Kanit', sans-serif;
+    color: #596870;  
+    margin-bottom: 50px;
+}
+.form-title
+{
+    font-family: 'Kanit', sans-serif;
+    color: #596870;  
+    font-size:6mm; 
+    text-align: center;
+}
+.list-group-item
+{
+    background-color: inherit!important;
+    border:none;
+    color: #2d3235; 
+    padding: 4px 2px;
+    height:70px;
+}
+.list-group-item h1
+{
+ font-size:5mm;
+ font-family: 'Montserrat', sans-serif!important;
+ font-weight: bold;
+ color: rgb(102, 102, 93);
+}
+.list-group-item h1 i
+{
+    color:teal;
+    font-size: 10mm;
+    margin:0px 12px;
+}
+
+.cont-form
+{
+    width:100%;
+    height:600px;
+   
+    padding:16px;
+    background: #ccc;
+}
+
+.form-input
+{
+    width:100%;
+    height:50px;
+    border:none;
+    font-size:16px;
+    padding:0px 8px;
+    font-family: 'Montserrat', sans-serif!important;
+    background-color: #f5f5f5;
+}
+.form-input:focus 
+{
+    outline: none;
+}
+
+.contact
+{
+        padding:15px;
+        border:none;
+        font-size:1em;
+        font-family: 'Montserrat', sans-serif!important;
+        color:#fff;
+        background-color: teal;
+        font-weight: bold;
+        border-radius: 9px;  
+}
+
+.contact:hover
+{
+    background-color:rgb(11, 148, 148);
+}
+
+
+@media(max-width:800px)
+{
+ .message
+ {
+     padding:30mm 15px;
+     margin-bottom:10px;
+ }
+.message-number{
+    font-size: 12mm;
+    margin:30px 0px 0px 0px; 
+}
+.title
+{
+    font-family: 'Kanit', sans-serif;
+    color: #596870;  
+    margin-top: 30px;
+    font-size: 10mm;
+}
+.list-group-item
+{
+    background-color: inherit!important;
+    border:none;
+    color: #2d3235; 
+    padding: 0px 0px;
+    height:50px;
+}
+
+.list-group-item h1
+{
+ font-size:4mm;
+ font-family: 'Montserrat', sans-serif!important;
+ font-weight: bold;
+ color: rgb(102, 102, 93);
+}
+
+.list-group-item h1 i
+{
+    color:teal;
+    font-size:6mm;
+    margin:0px 0px;
+}
+ .cont-form
+ {
+     margin-top:16px;
+ }
+
+ .contact
+{
+        padding:10px;
+        border:none;
+        font-size:1em;
+        font-family: 'Montserrat', sans-serif!important;
+        color:#fff;
+        background-color: teal;
+        font-weight: bold;
+        border-radius: 9px;  
+}
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+*{
+   
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.review{
+    width: 100%;
+    height:auto; 
+    background-color: #197ec2;
+    padding: 50px 0px;
+}
+.review-cont-one
+{
+   
+    height:auto;
+    padding:3px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review-cont-one div{
+    width:70%;
+    height: auto;
+    text-align: left;
+}
+.title
+{
+    font-family: 'Kanit', sans-serif;
+    color: #f5f5f5;  
+    font-size:10mm;
+    font-weight: bold;
+}
+.description{
+    font-family: 'Montserrat', sans-serif!important;
+    font-size:4mm;
+    color:#f5f5f5;
+    font-weight: 500;
+    margin:15px 0px;
+}
+.view-all{
+    padding: 10px 30px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Kanit', sans-serif;
+    color:#000;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 25px 10px;
+}
+
+img{
+    width:100%;
+    height:400px;
+    outline: 5px solid #fff;
+    object-fit:fill;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

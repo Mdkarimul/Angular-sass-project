@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+.row {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Start main footer coding here */
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  color: #5a5a5a;
+  padding: 25mm 0mm 10mm 0mm;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.footer-title {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 18px;
+  font-weight: bold;
+  border-left: 4px solid white;
+  padding-left: 4px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.address-title {
+  color: rgb(173, 163, 163);
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.list-group-item {
+  background-color: inherit;
+  color: gray;
+  cursor: pointer;
+  padding: 4px 2px;
+  border: none !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.list-group-item-address {
+  background-color: inherit;
+  color: gray;
+  padding: 4px 2px;
+  border: none !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.list-group-item:hover {
+  color: #ccc;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+/*Social media coding */
+.social-cont {
+  width: 50%;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 1s;
+  color: white;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-one:hover {
+  border-end-end-radius: 0px;
+  transition: 1s;
+}
+
+/* End social media coding here*/
+@media (max-width: 800px) {
+  .footer {
+    padding: 25mm 0mm 8mm 0mm;
+  }
+  .footer-title {
+    margin-top: 12px;
+  }
+}

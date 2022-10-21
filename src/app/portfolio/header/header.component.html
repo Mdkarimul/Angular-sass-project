@@ -1,0 +1,364 @@
+<div>
+    <div class="main">
+     <!--Mobile nav coding here-->
+     <div [class]="mobile_control ? 'mobile-nav-cont-hide' : 'mobile-nav-cont-show'">
+       <ul class="mobile-nav">
+         <li class="mobile-nav-item"><div><a href=""></a><i (click)="show()" class="fa fa-close"></i></div></li>
+         <li class="mobile-nav-item"><div><a routerLinkActive="active" routerLink="">home</a><i class=""></i></div></li>
+         <li class="mobile-nav-item"><div><a routerLinkActive="active" routerLink="portfolio">portfolio</a><i class=""></i></div></li>
+         <li class="mobile-nav-item"><div><a routerLinkActive="active" routerLink="services">services</a><i (click)="show_submenu_services()" [class]="services_icon ? 'fa fa-angle-down' :'fa fa-angle-up'"></i></div>
+         <ul [class]="mobile_control_sub_services ? 'mobile-nav-sub-hide-services' : 'mobile-nav-cont-show-services'">
+           <li class="mobile-nav-item-sub"><a href="" routerLink="web development" routerLinkActive="active">Web development</a><i class=" fa fa-angle-down"></i></li>
+           <li class="mobile-nav-item-sub"><a href="" routerLink="web development" routerLinkActive="active">mordern development</a><i class=" fa fa-angle-down"></i></li>
+           <li class="mobile-nav-item-sub"><a href="" routerLink="web development" routerLinkActive="active">mobile app development</a><i class=" fa fa-angle-down"></i></li>
+           <li class="mobile-nav-item-sub"><a href="" routerLink="web development" routerLinkActive="active">creative designing</a><i class=" fa fa-angle-down"></i></li>
+           <li class="mobile-nav-item-sub"><a href="" routerLink="web development" routerLinkActive="active">360<sup>0</sup> digital marketing</a><i class=" fa fa-angle-down"></i></li>
+           <li class="mobile-nav-item-sub"><a href="" routerLink="web development" routerLinkActive="active">Website maintenance</a><i class=" fa fa-angle-down"></i></li>
+         </ul>
+         </li>
+   
+         <li class="mobile-nav-item"><div><a routerLinkActive="active" routerLink="about" href="">About</a><i (click)="show_submenu_about()" [class]="about_icon ? 'fa fa-angle-down' : 'fa fa-angle-up'"></i></div>
+          <ul [class]="mobile_control_sub_about ? 'mobile-nav-sub-hide-about' : 'mobile-nav-sub-show-about'">
+           <li class="mobile-nav-item-sub"><a href="" routerLink="web development" routerLinkActive="active">about us</a><i class=" fa fa-angle-down"></i></li>
+           <li class="mobile-nav-item-sub"><a href="" routerLink="web development" routerLinkActive="active">how we work</a><i class=" fa fa-angle-down"></i></li>
+           <li class="mobile-nav-item-sub"><a href="" routerLink="web development" routerLinkActive="active">how we proceed</a><i class=" fa fa-angle-down"></i></li>
+           <li class="mobile-nav-item-sub"><a href="" routerLink="web development" routerLinkActive="active">our capabilities</a><i class=" fa fa-angle-down"></i></li>
+         </ul>
+         </li>
+         <li class="mobile-nav-item"><div><a  routerLinkActive="active" routerLink="next gen" href="">next gen</a><i (click)="show_submenu_next_gen()" [class]="next_gen_icon? 'fa fa-angle-down':'fa fa-angle-up'"></i></div>
+           <ul [class]="mobile_control_sub_next_gen ? 'mobile-nav-sub-hide-next-gen' : 'mobile-nav-sub-show-next-gen'">
+             <li class="mobile-nav-item-sub"><a href="" routerLink="web development" routerLinkActive="active">artificial intelligence</a><i class=" fa fa-angle-down"></i></li>
+             <li class="mobile-nav-item-sub"><a href="" routerLink="web development" routerLinkActive="active">IOT development</a><i class=" fa fa-angle-down"></i></li>
+             <li class="mobile-nav-item-sub"><a href="" routerLink="web development" routerLinkActive="active">block chain</a><i class=" fa fa-angle-down"></i></li>
+             <li class="mobile-nav-item-sub"><a href="" routerLink="web development" routerLinkActive="active">chatbot</a><i class=" fa fa-angle-down"></i></li>
+             <li class="mobile-nav-item-sub"><a href="" routerLink="web development" routerLinkActive="active">custom software development</a><i class=" fa fa-angle-down"></i></li>
+           </ul>
+         </li>
+         <li class="mobile-nav-item"><div><a  routerLinkActive="active" routerLink="contact us" href="">contact us</a><i class=""></i></div>
+         </li> 
+       </ul>
+       </div>
+       <!--Mobile nav coding end here-->
+   
+   
+     <!--Top line coding start here-->
+        <div class="logo-action-cont">
+       <div class="logo">
+         <div><img src="../../assets/logo.png" alt=""></div>
+           <span>
+             ISO 9001:2015
+           <br>
+             Certified Company
+           </span>
+         </div>
+       <div class="action">
+         <button class="bt"><fa-icon [styles]="{'transform':'rotate(-40deg)','margin-right':'5px'}" size="1x" [icon]="faPhoneVolume"></fa-icon>Schedule Time To Talk</button>
+       </div>
+       </div>
+       <!--Top line coding end here-->
+
+     <!--nav coding start here-->
+       <div class="div-header-nav" [@navani]="sticky">
+         <div class="mobile-navbar-cont">
+           <img src="../../assets/logo-icon.png" [style]="logo_icon" alt="">
+           <div class="call-mobile" [style]="call_mobile">
+             <div class="call-number">
+              <fa-icon [styles]="{'transform':'rotate(-40deg)','margin-right':'5px','color':'white'}" size="1x" [icon]="faPhoneVolume"></fa-icon><span>9749-959-045</span></div>
+           </div>
+         </div>
+         <div class="mobile-icon"><fa-icon  size="1x" [icon]="faBars" (click)="show()" ></fa-icon></div>
+       
+       <!--desktop navbar-->
+         <div class="top-bar">
+           <div class="row  p-0 m-0" style="width:100%;height:100%;">
+               <div class="col-4" style="height:100%;display:flex;justify-items: center;align-items: center;">
+                 <img src="../../assets/logo-icon.png" [style]="logo_icon" alt="">
+                 <div class="call-number">
+                  <fa-icon [styles]="{'transform':'rotate(-40deg)','margin-right':'5px','color':'white'}" size="1x" [icon]="faPhoneVolume"></fa-icon> <span>9749-959-045</span></div>
+               </div>
+               <div class="col-8">
+                  <ul class="nav" #nav>
+                      <li class="nav-item   hover">
+                        <a class="nav-link" routerLinkActive="active" routerLink="">home</a>
+                      </li>
+                      <li class="nav-item   hover">
+                        <a class="nav-link" routerLinkActive="active" routerLink="portfolio">portfolio</a>
+                      </li>
+                      <li class="nav-item hover"  [ngStyle]="overflow_service"  (mouseenter)="ctrl_caret_service()" (mouseleave)="ctrl_caret_service()">
+                        <a class="nav-link" routerLinkActive="active" routerLink="services">services<fa-icon   [rotate]="caret_rotate_service"  [icon]="caret_service" [styles]="{'font-size':'16px','margin':'-2px 5px'}"></fa-icon></a>
+                        <ul class="nav sub-menu" [@fade]="fade_service ?'hide':'show'" >
+                          <div class="triangle" [ngStyle]="show_menu_service"></div>
+                          <div class="sub-menu-content" [ngStyle]="show_menu_service" [ngClass]="">
+                            <li class="sub-menu-item one">
+                              <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                              </div>
+                              <div class="sub-menu-item-content">
+                                <a class="">our services</a>
+                                <span>Our Services Can Simplify Your Business Processes</span>
+                              </div>
+                            </li>
+                            <hr>
+                            
+                            <li class="sub-menu-item">
+                              <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                              </div>
+                              <div class="sub-menu-item-content">
+                                <div class="item-arrow-cont"><a class="">web development</a><div class="item-arrow">
+                                  <fa-icon class="fa-one" [icon]="faArrowRight"></fa-icon>
+                                </div></div>
+                                <span>Developing unthinkable solution</span>
+                              </div>
+                            </li>
+
+                            <li class="sub-menu-item">
+                              <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                              </div>
+                              <div class="sub-menu-item-content">
+                                <div class="item-arrow-cont"><a class="">mordern development</a><div class="item-arrow"><fa-icon class="fa-one" [icon]="faArrowRight"></fa-icon></div></div>
+                                <span>bringing mordern technologies together</span>
+                              </div>
+                            
+                            </li>
+
+                            <li class="sub-menu-item">
+                              <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                              </div>
+                              <div class="sub-menu-item-content">
+                                <div class="item-arrow-cont"><a class="">mobile app development</a><div class="item-arrow"><fa-icon class="fa-one" [icon]="faArrowRight"></fa-icon></div></div>
+                                <span>one touch solutions that build brands</span>
+                              </div>
+                            
+                            </li>
+
+                            <li class="sub-menu-item">
+                              <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                              </div>
+                              <div class="sub-menu-item-content">
+                                <div class="item-arrow-cont"><a class="">creative design</a><div class="item-arrow"><fa-icon class="fa-one" [icon]="faArrowRight"></fa-icon></div></div>
+                                <span>catering creativity with positive results</span>
+                              </div>
+                            </li>
+
+                            <li class="sub-menu-item">
+                              <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                              </div>
+                              <div class="sub-menu-item-content">
+                                <div class="item-arrow-cont"><a class="">360<sup>0</sup> digital marketing</a><div class="item-arrow"><fa-icon class="fa-one" [icon]="faArrowRight"></fa-icon></div></div>
+                                <span>building relationship, building brands</span>
+                              </div>
+                            
+                            </li>
+
+                            <li class="sub-menu-item">
+                              <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                              </div>
+                              <div class="sub-menu-item-content">
+                                <div class="item-arrow-cont"><a class="">website maintenance</a><div class="item-arrow"><fa-icon class="fa-one" [icon]="faArrowRight"></fa-icon></div></div>
+                                <span>we maintain your site like it's our own</span>
+                              </div>
+                            
+                            </li>
+                          </div>
+
+                          <li class="quotes" [ngStyle]="show_menu_service">
+                           
+                            <span>get free quotes</span>
+                         
+                        
+                        </li>
+                         
+                        </ul>
+                      </li>
+                      <li class="nav-item hover" [ngStyle]="overflow_about" (mouseenter)="ctrl_caret_about()" (mouseleave)="ctrl_caret_about()">
+                        <a class="nav-link" routerLinkActive="active" routerLink="about">about<fa-icon   [rotate]="caret_rotate_about"  [icon]="caret_about" [styles]="{'font-size':'16px','margin':'-2px 5px'}"></fa-icon></a>
+                        <ul class="nav sub-menu" [@fade]="fade_about ?'hide':'show'" >
+                          <div class="triangle" [ngStyle]="show_menu_about"></div>
+                          <div class="sub-menu-content" [ngStyle]="show_menu_about" [ngClass]="">
+                            <li class="sub-menu-item one">
+                              <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                              </div>
+                              <div class="sub-menu-item-content">
+                                <a class="">about us</a>
+                                <span>Web Wizards Who Bring Imagination to Digital Reality</span>
+                              </div>
+                            </li>
+                            <hr>
+                            
+                            <li class="sub-menu-item">
+                              <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                              </div>
+                              <div class="sub-menu-item-content">
+                                <div class="item-arrow-cont"><a class="">about us</a><div class="item-arrow">
+                                  <fa-icon class="fa-one" [icon]="faArrowRight"></fa-icon>
+                                </div></div>
+                                <span>know about our journey to the top</span>
+                              </div>
+                            </li>
+
+                            <li class="sub-menu-item">
+                              <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                              </div>
+                              <div class="sub-menu-item-content">
+                                <div class="item-arrow-cont"><a class="">how we work</a><div class="item-arrow"><fa-icon class="fa-one" [icon]="faArrowRight"></fa-icon></div></div>
+                                <span>work strategy that always outshines</span>
+                              </div>
+                            
+                            </li>
+
+                            <li class="sub-menu-item">
+                              <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                              </div>
+                              <div class="sub-menu-item-content">
+                                <div class="item-arrow-cont"><a class="">how we proceed</a><div class="item-arrow"><fa-icon class="fa-one" [icon]="faArrowRight"></fa-icon></div></div>
+                                <span>work process that assures success</span>
+                              </div>
+                            
+                            </li>
+
+                            <li class="sub-menu-item">
+                              <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                              </div>
+                              <div class="sub-menu-item-content">
+                                <div class="item-arrow-cont"><a class="">our capabilities</a><div class="item-arrow"><fa-icon class="fa-one" [icon]="faArrowRight"></fa-icon></div></div>
+                                <span>finest technological skills served</span>
+                              </div>
+                            </li>
+
+                   
+
+                          
+                          </div>
+
+                          <li class="quotes" [ngStyle]="show_menu_about">
+                           
+                            <span>download our brochure</span>
+                        </li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item hover" [ngStyle]="overflow_gen" (mouseenter)="ctrl_caret_gen()" (mouseleave)="ctrl_caret_gen()">
+                       <a class="nav-link" routerLinkActive="active"  routerLink="next gen">next gen<fa-icon   [rotate]="caret_rotate_gen"  [icon]="caret_gen" [styles]="{'font-size':'16px','margin':'-2px 5px'}"></fa-icon></a>
+                       <ul class="nav sub-menu" [@fade]="fade_gen ?'hide':'show'" >
+                        <div class="triangle" [ngStyle]="show_menu_gen"></div>
+                        <div class="sub-menu-content" [ngStyle]="show_menu_gen" [ngClass]="">
+                          <li class="sub-menu-item one">
+                            <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                            </div>
+                            <div class="sub-menu-item-content">
+                              <a class="">next gen</a>
+                              <span>our futuristic solutions can save your tomorrow</span>
+                            </div>
+                          </li>
+                          <hr>
+                          
+                          <li class="sub-menu-item">
+                            <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                            </div>
+                            <div class="sub-menu-item-content">
+                              <div class="item-arrow-cont"><a class="">artificial intelligent</a><div class="item-arrow">
+                                <fa-icon class="fa-one" [icon]="faArrowRight"></fa-icon>
+                              </div></div>
+                              <span>laying intelligence on machines</span>
+                            </div>
+                          </li>
+
+                          <li class="sub-menu-item">
+                            <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                            </div>
+                            <div class="sub-menu-item-content">
+                              <div class="item-arrow-cont"><a class="">IOT development</a><div class="item-arrow"><fa-icon class="fa-one" [icon]="faArrowRight"></fa-icon></div></div>
+                              <span>connecting devices to the web</span>
+                            </div>
+                          
+                          </li>
+
+                          <li class="sub-menu-item">
+                            <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                            </div>
+                            <div class="sub-menu-item-content">
+                              <div class="item-arrow-cont"><a class="">blockchaine</a><div class="item-arrow"><fa-icon class="fa-one" [icon]="faArrowRight"></fa-icon></div></div>
+                              <span>building secure and mordern web</span>
+                            </div>
+                          
+                          </li>
+
+                          <li class="sub-menu-item">
+                            <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                            </div>
+                            <div class="sub-menu-item-content">
+                              <div class="item-arrow-cont"><a class="">chatboot</a><div class="item-arrow"><fa-icon class="fa-one" [icon]="faArrowRight"></fa-icon></div></div>
+                              <span>developing better communication</span>
+                            </div>
+                          </li>
+
+                          <li class="sub-menu-item">
+                            <div class="sub-menu-icon"><svg width="40" height="40" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>
+                            </div>
+                            <div class="sub-menu-item-content">
+                              <div class="item-arrow-cont"><a class="">custom software development</a><div class="item-arrow"><fa-icon class="fa-one" [icon]="faArrowRight"></fa-icon></div></div>
+                              <span>software that simplifies operations</span>
+                            </div>
+                          
+                          </li>
+
+                    
+                        </div>
+
+                        <li class="quotes" [ngStyle]="show_menu_gen">
+                         
+                          <span>get free quotes</span>
+                       
+                      
+                      </li>
+                       
+                      </ul>
+                      </li>
+                      <li class="nav-item hover">
+                        <a class="nav-link " routerLinkActive="active" routerLink="contact us">contact us</a>
+                      </li>
+                    </ul>
+               </div>
+           </div>
+          </div>
+          <!--End desktop navbar here-->
+       </div>
+       <!--nav coding end here-->
+   
+          
+       <!--start hero section here-->
+       <!-- <div class="hero_cont"> -->
+         <div class="row p-0 main-row">
+           <div class="col-lg-6 main-caption-cont">
+            <div class="caption-cont">
+              <h1 [@heroheader]="control_animate ?'down':'up'">
+                Our Portfolio</h1>
+              <p [@herodesc]="control_animate?'down':'up'">A List of Work that Proves Ourselves to be the Best Web Development Company in Town!</p>
+                <button >Get free quotes</button>
+              </div>
+           </div>
+           <div class="col-lg-6" style="display: flex;justify-content:center;align-items:center;">
+            <div class="animate-cont">
+             
+          <div class="screen">
+            <owl-carousel-o  class="ca" [options]="customOptions">
+              <ng-container *ngFor="let slide of slides">
+                  <ng-template carouselSlide [id]="slide.id">
+                      <img [src]="slide.url" [alt]="slide.alt" [title]="slide.title">
+                    </ng-template>
+                
+                 
+                </ng-container>
+            </owl-carousel-o>
+          </div>
+            </div>
+           </div>
+             </div>
+             
+       </div>
+   
+   
+        <!--End hero section here-->
+        
+    </div>  
+   
+   

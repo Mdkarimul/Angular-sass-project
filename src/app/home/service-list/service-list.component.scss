@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.main{
+    width:100%;
+    height:auto;
+    background-color:white;
+    position: relative;
+    display: flex;
+    justify-content:space-around;
+    flex-direction:row;
+    align-items: center;
+}
+
+.main-for-tab-cont
+{ 
+    margin-left: 40%;
+   width:60%;
+   /* background-image:linear-gradient(to right ,rgb(54, 202, 165),rgb(19, 139, 219)); */
+   height:fit-content;
+   background-color:rgb(19, 139, 219);
+}
+.main_for_tab{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content:space-around;
+    flex-direction:row;
+    align-items: center;
+    color:white;
+    padding:20px 10px;
+    background-color: transparent;
+}
+.line{
+    width:6px;
+    height:90%;
+    background-color:rgb(59, 138, 241);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    float:right;
+    position: relative;
+}
+.line-cont{
+    width:10%;
+    height:450px;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    padding:0px 5px;
+}
+.main-item{
+    width:100%;
+    height:450px;
+    position: relative;
+    display: flex;
+    justify-content:space-around;
+    flex-direction:column;
+    align-items: center;
+    padding: 12px 0px;
+}
+.item-name{
+    font-size:14px;
+    font-family: 'Montserrat', sans-serif!important;
+    font-weight: 800;
+    float: left;
+}
+.case-one,.case-two,.case-three,.case-four,.case-five
+{
+  cursor :pointer;
+   padding:20px 10px;
+   border:1px solid #24AAC0;
+   background :transparent;
+   width :100%;
+   display: flex;
+   align-items: center;
+   border-top-left-radius:10px;
+   border-bottom-left-radius :10px;
+   cursor:pointer;
+}
+
+
+
+.cont{
+    width:60%;
+    height:auto;
+    position: relative;
+    padding:25px;
+    align-items: center;
+    color:#000;
+    float: left;
+}
+.img-cont{
+    width:40%;
+    height:100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-cont img{
+    width:200px;
+    margin:auto 0px;
+}
+.title{
+    font-family: 'Montserrat', sans-serif!important;
+    font-size: 25px;
+    color: #5a5a5a;
+}
+.sub-title{
+    font-family: 'Montserrat', sans-serif!important;
+    font-size: 18px;
+    color: #5a5a5a;
+}
+
+.design-content
+{
+    color:#5a5a5a;
+    line-height: 28px;
+    font-family: 'Popins', sans-serif;
+}
+
+.contact
+{
+        padding:10px 15px;
+        border:none;
+        font-size:14px;
+        font-family: 'Montserrat', sans-serif;
+        color:#fff;
+        background-color:#33BE74;
+        border-radius:5px;
+        margin:12px 0px;
+        transition:all 0.4s;
+}
+
+.contact:hover
+{
+    background-color:#248551;
+}
+
+
+@media(min-width:985px) and (max-width:1200px)
+{
+    .main-for-tab-cont
+{ 
+    margin-left:30%;
+   width:70%;
+}
+    .item-name{
+        font-size: 14px;
+        font-weight:normal;
+    }
+
+}
+
+@media(max-width:985px)
+{
+    .main-for-tab-cont
+    { 
+       margin-left:20%;
+       width:80%;
+    }
+    .title{
+        font-size:18px;
+        font-weight:400px;
+    }
+    .sub-title
+    {
+    font-family: 'Montserrat', sans-serif!important;
+    font-size: 16px;
+    }
+    .design-content
+    {
+        line-height:30px;
+    }
+
+
+    .contact
+{
+    padding:10px 15px;
+    margin:12px 0px;
+    
+}
+.img-cont{
+    display: none;
+}
+.cont{
+    width:100%;
+}
+}
+
+@media(min-width:400px) and (max-width:800px) {
+    .line-cont{
+       display: none;
+    }
+    .main-for-tab-cont
+    { 
+       margin-left:0%;
+       width:100%;
+    }
+    .main_for_tab{
+        width:100%;
+        height:auto;
+        color:white;
+        padding:0;
+        background-color: transparent;
+    }
+
+    .main-item{
+        width:60%;
+        height:100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .case-one,.case-two,.case-three,.case-four,.case-five
+{
+  cursor :pointer;
+   background :transparent;
+   width :100%;
+   text-align:center;
+   border-radius:10px;
+   cursor:pointer;
+   margin: 10px 0px;
+   background-color:transparent;
+   color:#5a5a5a;
+}
+}
+
+
+
+
+
+
+
+
+

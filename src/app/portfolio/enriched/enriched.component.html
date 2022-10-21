@@ -1,0 +1,26 @@
+<div class="main">
+    <h3 class="title">Different Industries, Enriched By Us</h3>
+
+    <div class="animate-cont">
+        <div>
+        <ng-container *ngFor="let item of service_items;let i=index;">
+            <div  [ngClass]="item.cls"  (mouseenter)="getActive(i)" [class]="c_index===i?'active':''"><div [ngClass]="item.cls_img" [class]="c_index==i?'remove':''"><img [src]="item.url" alt=""></div><div [class]="c_index==i ?'twinc':''" [ngClass]="item.cls_text">{{item['text']}}</div></div>
+        </ng-container>
+        </div>
+    </div>
+
+    <h3 class="title-project">Our Projects</h3>
+
+  <div class="project-cont">
+    <ng-container *ngFor="let project of projects;let i=index;">
+      <div class="project-item">
+        <img class="project-img" [src]="project.url" alt="">
+      <div class="hover-cont">
+        <fa-icon [icon]="faCirclePlus"></fa-icon>
+      </div>
+      
+    </div>
+    </ng-container>
+  </div>
+
+</div>

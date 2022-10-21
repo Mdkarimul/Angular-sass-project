@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+.main {
+  width: 100%;
+  height: auto;
+  background-color: #F3F6F9;
+  padding: 40px 0px;
+}
+
+.cont-text {
+  width: 80%;
+  height: auto;
+  background-color: transparent;
+  margin: 0px auto;
+  padding: 15px 0px;
+}
+
+.title-cont {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  padding: 50px 20px;
+}
+
+.title-cont h1 {
+  font-family: "Roboto", sans-serif;
+  color: #5a5a5a;
+  font-weight: 600px;
+  font-size: 2rem;
+}
+
+.title-cont p {
+  font-family: "Roboto", sans-serif;
+  color: #5a5a5a;
+  font-weight: 600px;
+}
+
+.box-cont {
+  width: 100%;
+  height: 320px;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  background-color: #45D387;
+}
+
+.box-one {
+  width: 100%;
+  height: 80%;
+  background-color: #ccc;
+  margin-right: 10%;
+  padding: 20px 25px;
+  float: left;
+  border-top: 2px dashed #45D387;
+}
+
+.box-two {
+  width: 100%;
+  height: 80%;
+  background-color: #c8c8c8;
+  margin-right: 30px;
+  padding: 20px 25px;
+  float: left;
+  border-top: 2px dashed #45D387;
+}
+
+.box-three {
+  width: 100%;
+  height: 80%;
+  background-color: #ddd;
+  margin-right: 30px;
+  padding: 20px 25px;
+  float: left;
+  border-top: 2px dashed #45D387;
+}
+
+.box-one p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #5a5a5a;
+  padding: 0px 15px;
+  cursor: pointer;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.box-two p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 17px;
+  color: #5a5a5a;
+  padding: 0px 15px;
+  cursor: pointer;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.box-three p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 17px;
+  color: #5a5a5a;
+  padding: 0px 15px;
+  cursor: pointer;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.box-one p span {
+  position: relative;
+}
+
+.box-two p span {
+  position: relative;
+}
+
+.box-three p span {
+  position: relative;
+}
+
+.box-one p span::before {
+  content: "";
+  width: 100%;
+  height: 0px;
+  background-color: #45D387;
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  transition: top 0.2s linear;
+}
+
+.box-one p span:hover::before {
+  top: 23px;
+  height: 1px;
+}
+
+.box-two p span::before {
+  content: "";
+  width: 100%;
+  height: 0px;
+  background-color: #45D387;
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  transition: top 0.2s linear;
+}
+
+.box-two p span:hover::before {
+  top: 23px;
+  height: 1px;
+}
+
+.box-three p span::before {
+  content: "";
+  width: 100%;
+  height: 0px;
+  background-color: #45D387;
+  position: absolute;
+  top: 28px;
+  left: 0px;
+  transition: top 0.2s linear;
+}
+
+.box-three p span:hover::before {
+  top: 23px;
+  height: 1px;
+}
+
+.box-one p i {
+  font-size: 20px;
+  margin: 0px 10px;
+  color: #2E39BF;
+  width: 30px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.box-two p i {
+  font-size: 20px;
+  margin: 0px 10px;
+  color: #ccc;
+  width: 30px;
+  text-align: center;
+}
+
+.box-three p i {
+  font-size: 20px;
+  margin: 0px 10px;
+  color: #2E39BF;
+  width: 30px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.box-two {
+  height: 100%;
+}
+
+.image-cont {
+  width: 100%;
+  height: 500px;
+  background-color: transparent;
+  text-align: center;
+  padding: 30px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-cont div {
+  width: 50%;
+  position: relative;
+}
+
+.image-cont .img-one {
+  width: 50%;
+  z-index: 2;
+}
+
+.image-cont .img-two {
+  width: 40%;
+}
+
+@media (max-width: 800px) {
+  .image-cont div {
+    width: 100%;
+  }
+}

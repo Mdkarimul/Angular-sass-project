@@ -1,0 +1,137 @@
+<div class="main">
+    
+    <div class="row">
+       <div style="width:100%;height:80px;"></div>
+
+       <div class="col-md-4 m-0 p-0">
+           <div class="main-for-tab-cont">
+               <div class="main_for_tab">
+             
+                   <div class="line-cont">
+                   <div class="line">
+                       <div class="case-four-line" [ngStyle]="item_line_active"></div>
+                   </div>
+                   </div>
+   
+                 
+                   <div class="main-item">
+   
+                       <div (click)="design(el)" #el  class="case-one" [style]="one">
+                           <h3 class="item-name"><svg style="color:#f5f5f5;margin:0px 10px;" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 23h-20c-2.208 0-4-1.792-4-4v-15.694c.313-1.071 1.285-2.306 3-2.306 1.855 0 2.769 1.342 2.995 2.312l.005 1.688h18v18zm-1-17h-17v13s-.665-1-2-1c-1.104 0-2 .896-2 2s.896 2 2 2h19v-16zm-18-2.68c-.427-.971-1.327-1.325-2-1.32-.661.005-1.568.3-2 1.32v16.178c.394-1.993 2.245-2.881 4-2.401v-13.777zm15 15.68h-12v-10h12v10zm-8-9h-3v8h10v-4h-2v3h-1v-3h-3v3h-1v-7zm7 0h-6v3h6v-3z"/></svg>Web Design</h3>
+                       </div>
+                       <div class="case-two" (click)="design(eltwo)" #eltwo [style]="two">
+                           <h3 class="item-name"><svg style="color:#f5f5f5;margin:0px 10px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 5c3.453 0 5.891 2.797 5.567 6.78 1.745-.046 4.433.751 4.433 3.72 0 1.93-1.57 3.5-3.5 3.5h-13c-1.93 0-3.5-1.57-3.5-3.5 0-2.797 2.479-3.833 4.433-3.72-.167-4.218 2.208-6.78 5.567-6.78zm0-2c-4.006 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408-.212-3.951-3.473-7.092-7.479-7.092zm-1 14l-4-1.701v-1.599l4-1.7v1.567l-2.229.933 2.229.93v1.57zm2-5v1.567l2.229.933-2.229.93v1.57l4-1.701v-1.599l-4-1.7z"/></svg>Web Development</h3>
+                       </div>
+                       <div class="case-three" (click)="design(elthree)" #elthree [style]="three" >
+                           <h3 class="item-name"><svg style="color:#f5f5f5;margin:0px 10px;" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" width="24" height="24" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm6.75 9.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-3.75.5v2.25h2.25v-2.25zm3.75-7.25v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm6.75 0v3.25c0 .53-.47 1-1 1h-3.25c-.53 0-1-.47-1-1v-3.25c0-.53.47-1 1-1h3.25c.53 0 1 .47 1 1zm-10.5.5v2.25h2.25v-2.25zm6.75 0v2.25h2.25v-2.25z" fill-rule="nonzero"/></svg>Online Marketing</h3>
+                       </div>
+                       <div class="case-four" (click)="design(elfour)" #elfour [style]="four">
+                           <h3 class="item-name"><svg style="color:#f5f5f5;margin:0px 10px;" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 23h-20c-2.208 0-4-1.792-4-4v-15.694c.313-1.071 1.285-2.306 3-2.306 1.855 0 2.769 1.342 2.995 2.312l.005 1.688h18v18zm-2-16h-16v11s-.587-1-1.922-1c-1.104 0-2.078.896-2.078 2s.896 2 2 2h18v-14zm-2 12h-12v-10h12v10zm-8-9h-3v8h10v-8h-6v3h6v1h-2v3h-1v-3h-3v3h-1v-7z"/></svg>Conver Optimization</h3>
+                       </div>
+                   </div>
+                   </div>
+           </div>
+          
+               
+               
+               
+
+           </div>
+         
+           
+       <!--border:1px groove rgb(54, 202, 165)-->
+       <div class="col-md-8" style="background-color: #f5f5f5;">
+
+      <div class="cont">
+          <ng-template  [ngIf]="one !=''">
+          <h3 class="title">Web Design</h3>
+        <h3 class="sub-title">Web Design and UX/UI are easily handle our team </h3>
+        <br>
+        <p class="design-content">
+           Experience the fascinating aesthetics and vibrant design for your website made by us.
+            Our team of commercially-driven UI-UX designers ensures the professionalism and uniqueness of your
+            website to compliment your business’s reputation. Our custom
+             designs maintain a nice balance between creativity and user 
+             experience that comes in handy for engagement and conversion.
+<br><br>
+           In a nutshell, our designs are crafted to impress (the audience) 
+           and express (your goals and commitment). An unparallel creativity 
+           and knowledge of user engagement help us stay dominant with the label 
+           of top website design company in Kolkata
+        </p>
+        <button class="contact">CONTACT US </button>
+       </ng-template>
+
+       <ng-template  [ngIf]="two !=''">
+           <h3 class="title">Web Development</h3>
+         <h3 class="sub-title">All the developers in our team have 5 years working expriences </h3>
+         <br><br>
+         <p class="design-content">
+           We make a website or mobile app communicate with the audience. Our team of web developers
+            are proficient in converting a collection of visuals into a functional website and app.
+             The developmental skills help us let
+            any application or website meet their goals. We develop sites and apps according to the 
+            agreed design and convert it to a dynamic piece of interaction with rich backend coding (with or without an open source CMS) and bespoke functionality.
+
+An array of different technologies employed in our developmental works equip us to create almost every
+possible website that’s there on the market. The immense knowledge of CMS, frameworks,
+ and different software help us to fight for the title – best web development company 
+ in India and retain it!
+ <br><br>
+ An array of different technologies employed in our developmental works equip us to create almost every
+possible website that’s there on the market. The immense knowledge of CMS, frameworks,
+ and different software help us to fight for the title – best web development company 
+         </p>
+         <button class="contact">CONTACT US </button>
+        </ng-template>
+
+        <ng-template  [ngIf]="three!=''">
+           <h3 class="title">Online Marketing </h3>
+         <h3 class="sub-title">We provided lots of services in marketing domain </h3>
+         <br><br>
+         <p class="design-content">
+           Marketing is the heart of any business and a website which is why a website without marketing is
+            fairly a body without soul. We offer the story-driven, sprint-based approach to digital marketing
+             which harness the data to create the human connections and help the businesses create value while
+              staying agile.
+            Our digital marketing strategies are crafted by our skilled digital marketers and we also offer
+             consultation for any of your online marketing needs.
+<br><br>
+Our digital marketing executives will monitor your Information Architecture (IA), design, business nature,
+and target audience. Then we will make sure that your website turns into an effective marketing tool
+ which is ready to convert and meet the business objectives. Our online marketing services contain SEO, 
+ SMO, ORM, PPC and much more.
+         </p>
+         <button class="contact">CONTACT US </button>
+        </ng-template>
+
+        <ng-template  [ngIf]="four!=''">
+           <h3 class="title">Conver optimization </h3>
+         <h3 class="sub-title">We Optimize Your Web Presence for Conversion </h3>
+         <br><br>
+         <p class="design-content">
+           Intlum Technology is a devoted conversion optimization company at the heart of Kolkata. We eye
+            on improving user experience by modifying the user perception, motivation and behavior on the 
+            website through psychological methodologies, design changes and A/B Testing. These are the proven
+            methods to elevate your conversion rates, overall revenue and improve website accessibility. Our 
+            conversion optimization includes conducting surveys and audience investigations which eventually 
+            result in enriching user experience.
+<br><br>
+Being the leading web design company in Kolkata and India, Intlum focuses on nurturing your business with the
+most fruitful conversion that helps your business to grow bigger and better. Our end-to-end optimization
+ process gives your business a pair of wings to fly and achieve the conversion you desire and deserve. 
+ Uplift your conversion rate by joining hands with Intlum.
+         </p>
+         <button class="contact">CONTACT US </button>
+        </ng-template>
+      </div>
+      <div class="img-cont">
+       <img src="../../../assets/websolution-img.png" alt="">
+      </div>
+       </div>
+
+      
+       <div style="width:100%;height:100px;"></div>
+       
+   </div> 
+</div>
