@@ -23,7 +23,6 @@
 { 
     margin-left: 40%;
    width:60%;
-   /* background-image:linear-gradient(to right ,rgb(54, 202, 165),rgb(19, 139, 219)); */
    height:fit-content;
    background-color:rgb(19, 139, 219);
 }
@@ -54,7 +53,7 @@
     height:450px;
     display: flex;
     align-items: center;
-    justify-content:end;
+    justify-content:flex-end;
     padding:0px 5px;
 }
 .main-item{

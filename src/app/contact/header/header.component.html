@@ -86,7 +86,7 @@
                       </li>
                       <li class="nav-item hover"  [ngStyle]="overflow_service"  (mouseenter)="ctrl_caret_service()" (mouseleave)="ctrl_caret_service()">
                         <a class="nav-link" routerLinkActive="active" routerLink="services">services<fa-icon   [rotate]="caret_rotate_service"  [icon]="caret_service" [styles]="{'font-size':'16px','margin':'-2px 5px'}"></fa-icon></a>
-                        <ul class="nav sub-menu" [@fade]="fade_service ?'hide':'show'" >
+                        <ul class="nav sub-menu" [@fade]="fade_service ? 'hide' : 'show'" >
                           <div class="triangle" [ngStyle]="show_menu_service"></div>
                           <div class="sub-menu-content" [ngStyle]="show_menu_service" [ngClass]="">
                             <li class="sub-menu-item one">
@@ -331,25 +331,15 @@
            <div class="col-lg-6 main-caption-cont">
             <div class="caption-cont">
               <h1 [@heroheader]="control_animate ?'down':'up'">
-                Our Portfolio</h1>
-              <p [@herodesc]="control_animate?'down':'up'">A List of Work that Proves Ourselves to be the Best Web Development Company in Town!</p>
-                <button >Get free quotes</button>
+                Let Us Help You Grow</h1>
+              <p [@herodesc]="control_animate?'down':'up'">Are You Ready to Launch Your Dream? You are Just a Call Away!</p>
+                <button >Send queries</button>
               </div>
            </div>
            <div class="col-lg-6" style="display: flex;justify-content:center;align-items:center;">
             <div class="animate-cont">
              
-          <div class="screen">
-            <owl-carousel-o  class="ca" [options]="customOptions">
-              <ng-container *ngFor="let slide of slides">
-                  <ng-template carouselSlide [id]="slide.id">
-                      <img [src]="slide.url" [alt]="slide.alt" [title]="slide.title">
-                    </ng-template>
-                
-                 
-                </ng-container>
-            </owl-carousel-o>
-          </div>
+        
             </div>
            </div>
              </div>
