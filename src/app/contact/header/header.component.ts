@@ -18,19 +18,19 @@ export class HeaderComponent implements OnInit,AfterViewInit{
   /*control dropdown menu (servive)*/ 
   faArrowRight=faArrowRight;
   public caret_service=faCaretUp;
-  public caret_rotate_service:0 | 90 | 180 | 270 =180;
+  public caret_rotate_service:undefined;
   public show_menu_service = {'display':'none'}
   public fade_service =true;
   public overflow_service = {'overflow':'hidden'}
    /*control dropdown menu (about)*/ 
    public caret_about=faCaretUp;
-   public caret_rotate_about:0 | 90 | 180 | 270 =180;
+   public caret_rotate_about:undefined;
    public show_menu_about = {'display':'none'}
    public fade_about =true;
    public overflow_about = {'overflow':'hidden'}
      /*control dropdown menu (about)*/ 
      public caret_gen=faCaretUp;
-     public caret_rotate_gen:0 | 90 | 180 | 270 =180;
+     public caret_rotate_gen:undefined;
      public show_menu_gen = {'display':'none'}
      public fade_gen =true;
      public overflow_gen = {'overflow':'hidden'}
@@ -144,13 +144,13 @@ ctrl_caret_service(){
     this.overflow_service = {'overflow':'visible'}
     this.fade_service = false;
     this.show_menu_service = {'display':'block'}
-    this.caret_rotate_service =0;
+    // this.caret_rotate_service =0;
   }
   else{
     this.overflow_service = {'overflow':'hidden'}
     this.fade_service = true;
     this.show_menu_service = {'display':'none'}
-    this.caret_rotate_service =180;
+    // this.caret_rotate_service =180;
   }
 }
 
@@ -160,13 +160,13 @@ ctrl_caret_about(){
     this.overflow_about = {'overflow':'visible'}
     this.fade_about = false;
     this.show_menu_about = {'display':'block'}
-    this.caret_rotate_about =0;
+    // this.caret_rotate_about =0;
   }
   else{
     this.overflow_about = {'overflow':'hidden'}
     this.fade_about = true;
     this.show_menu_about = {'display':'none'}
-    this.caret_rotate_about =180;
+    // this.caret_rotate_about =180;
   }
 }
 
@@ -176,13 +176,13 @@ ctrl_caret_gen(){
     this.overflow_gen = {'overflow':'visible'}
     this.fade_gen = false;
     this.show_menu_gen = {'display':'block'}
-    this.caret_rotate_gen =0;
+    // this.caret_rotate_gen =0;
   }
   else{
     this.overflow_gen = {'overflow':'hidden'}
     this.fade_gen = true;
     this.show_menu_gen = {'display':'none'}
-    this.caret_rotate_gen =180;
+    // this.caret_rotate_gen =180;
   }
 }
 

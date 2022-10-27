@@ -85,7 +85,7 @@
                         <a class="nav-link" routerLinkActive="active" routerLink="portfolio">portfolio</a>
                       </li>
                       <li class="nav-item hover"  [ngStyle]="overflow_service"  (mouseenter)="ctrl_caret_service()" (mouseleave)="ctrl_caret_service()">
-                        <a class="nav-link" routerLinkActive="active" routerLink="services">services<fa-icon   [rotate]="caret_rotate_service"  [icon]="caret_service" [styles]="{'font-size':'16px','margin':'-2px 5px'}"></fa-icon></a>
+                        <a class="nav-link" routerLinkActive="active" routerLink="services">services<fa-icon   [rotate]=""  [icon]="caret_service" [styles]="{'font-size':'16px','margin':'-2px 5px'}"></fa-icon></a>
                         <ul class="nav sub-menu" [@fade]="fade_service ? 'hide' : 'show'" >
                           <div class="triangle" [ngStyle]="show_menu_service"></div>
                           <div class="sub-menu-content" [ngStyle]="show_menu_service" [ngClass]="">
@@ -170,7 +170,7 @@
                         </ul>
                       </li>
                       <li class="nav-item hover" [ngStyle]="overflow_about" (mouseenter)="ctrl_caret_about()" (mouseleave)="ctrl_caret_about()">
-                        <a class="nav-link" routerLinkActive="active" routerLink="about">about<fa-icon   [rotate]="caret_rotate_about"  [icon]="caret_about" [styles]="{'font-size':'16px','margin':'-2px 5px'}"></fa-icon></a>
+                        <a class="nav-link" routerLinkActive="active" routerLink="about">about<fa-icon   [rotate]=""  [icon]="caret_about" [styles]="{'font-size':'16px','margin':'-2px 5px'}"></fa-icon></a>
                         <ul class="nav sub-menu" [@fade]="fade_about ?'hide':'show'" >
                           <div class="triangle" [ngStyle]="show_menu_about"></div>
                           <div class="sub-menu-content" [ngStyle]="show_menu_about" [ngClass]="">
@@ -237,7 +237,7 @@
                       </li>
 
                       <li class="nav-item hover" [ngStyle]="overflow_gen" (mouseenter)="ctrl_caret_gen()" (mouseleave)="ctrl_caret_gen()">
-                       <a class="nav-link" routerLinkActive="active"  routerLink="next gen">next gen<fa-icon   [rotate]="caret_rotate_gen"  [icon]="caret_gen" [styles]="{'font-size':'16px','margin':'-2px 5px'}"></fa-icon></a>
+                       <a class="nav-link" routerLinkActive="active"  routerLink="next gen">next gen<fa-icon   [rotate]=""  [icon]="caret_gen" [styles]="{'font-size':'16px','margin':'-2px 5px'}"></fa-icon></a>
                        <ul class="nav sub-menu" [@fade]="fade_gen ?'hide':'show'" >
                         <div class="triangle" [ngStyle]="show_menu_gen"></div>
                         <div class="sub-menu-content" [ngStyle]="show_menu_gen" [ngClass]="">
